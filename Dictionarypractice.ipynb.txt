@@ -1,18 +1,4 @@
-{
- "cells": [
-  {
-   "cell_type": "markdown",
-   "id": "ccecec88",
-   "metadata": {},
-   "source": [
-    "## Dictionary:"
-   ]
-  },
-  {
-   "cell_type": "markdown",
-   "id": "93807060",
-   "metadata": {},
-   "source": [
+
     "Dictionary is a collection of **Key value pairs**, each key is unique. And each key points to a specfic value. Curlry brackets {} are use to create dictionaries in python.\n"
    ]
   },
@@ -26,25 +12,25 @@
      "name": "stdout",
      "output_type": "stream",
      "text": [
-      "Student Info: {'name': 'wahab', 'age': '12', 'class': 'seven', 'roll no': 'doc4556'}\n",
-      "Student Name: wahab\n",
-      "Student Age: 12\n",
-      "Student Class: seven\n",
+      "Student Info: {'name': 'khan', 'age': '17', 'class': 'twelve', 'roll no': 'doc4556'}\n",
+      "Student Name: khan\n",
+      "Student Age: 17\n",
+      "Student Class: twelve\n",
       "Student Roll No: doc4556\n",
-      "Updated Student Info: {'name': 'wahab', 'age': '12', 'class': 'seven', 'roll no': 'doc4556', 'hobby': 'football'}\n",
-      "name:wahab\n",
-      "age:12\n",
-      "class:seven\n",
+      "Updated Student Info: {'name': 'khan', 'age': '17', 'class': 'twelve', 'roll no': 'doc4556', 'hobby': 'hockey'}\n",
+      "name:khan\n",
+      "age:17\n",
+      "class: twelve\n",
       "roll no:doc4556\n",
-      "hobby:football\n"
+      "hobby:hockey\n"
      ]
     }
    ],
    "source": [
     "student={\n",
-    "    \"name\":\"wahab\",\n",
-    "    \"age\": \"12\",\n",
-    "    \"class\":\"seven\",\n",
+    "    \"name\":\"khan\",\n",
+    "    \"age\": \"17\",\n",
+    "    \"class\":\"twelve\",\n",
     "    \"roll no\":\"doc4556\"\n",
     "}\n",
     "print(\"Student Info:\",student) # for student complete info\n",
@@ -52,7 +38,7 @@
     "print(\"Student Age:\", student [\"age\"])  # for student age only\n",
     "print(\"Student Class:\", student [\"class\"]) # for student class only\n",
     "print(\"Student Roll No:\", student [\"roll no\"]) # for student roll no only\n",
-    "student [\"hobby\"]=\"football\"   # to add new key in dictionary\n",
+    "student [\"hobby\"]=\"hockey\"   # to add new key in dictionary\n",
     "print(\"Updated Student Info:\", student) # for updated info including new key\n",
     "for key, value in student.items():   # use loop function to display the dictionary vertically\n",
     "    print(f\"{key}:{value}\")"
